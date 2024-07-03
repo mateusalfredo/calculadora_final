@@ -1,0 +1,1 @@
+ C:\\Users\\aluno\\Desktop\\calculadora_final\\.dart_tool\\flutter_build\\6aa965787c5b9845d6d7684214e2fa8d\\native_assets.yaml: 

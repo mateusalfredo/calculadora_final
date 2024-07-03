@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:atividadeavaliativa/componentes/teclado.dart';
-import 'package:atividadeavaliativa/componentes/tela.dart';
+import 'package:mateus3031853/componentes/teclado.dart';
+import 'package:mateus3031853/componentes/tela.dart';
+import 'package:flutter/services.dart';
 
 class Calculadora extends StatefulWidget {
   const Calculadora({Key? key}) : super(key: key);
@@ -17,6 +18,9 @@ class _CalculadoraState extends State<Calculadora> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -111,6 +115,7 @@ class _CalculadoraState extends State<Calculadora> {
     });
   }
 
+//Dica do rafoso
   List<String> _tokenizar(String expressao) {
     List<String> tokens = [];
     String numero = '';
